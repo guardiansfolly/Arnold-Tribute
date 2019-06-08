@@ -1,0 +1,107 @@
+<!-- 
+>Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/zNqgVx.
+
+>Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.
+
+>You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is recommended because that is what the lessons have covered so far and you should get some practice with plain CSS. You can use Bootstrap or SASS if you choose. Additional technologies (just for example jQuery, React, Angular, or Vue) are not recommended for this project, and using them is at your own risk. Other projects will give you a chance to work with different technology stacks like React. We will accept and try to fix all issue reports that use the suggested technology stack for this project. Happy coding!
+
+>>User Story #1: My tribute page should have an element with a corresponding id="main", which contains all other elements.
+
+>>User Story #2: I should see an element with a corresponding id="title", which contains a string (i.e. text) that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug").
+
+>>User Story #3: I should see a div element with a corresponding id="img-div".
+
+>>User Story #4: Within the img-div element, I should see an img element with a corresponding id="image".
+
+>>User Story #5: Within the img-div element, I should see an element with a corresponding id="img-caption" that contains textual content describing the image shown in img-div.
+
+>>User Story #6: I should see an element with a corresponding id="tribute-info", which contains textual content describing the subject of the tribute page.
+
+>>User Story #7: I should see an a element with a corresponding id="tribute-link", which links to an outside site that contains additional information about the subject of the tribute page. HINT: You must give your element an attribute of target and set it to _blank in order for your link to open in a new tab (i.e. target="_blank").
+
+>>User Story #8: The img element should responsively resize, relative to the width of its parent element, without exceeding its original size.
+
+>>User Story #9: The img element should be centered within its parent element.
+
+>You can build your project by forking this CodePen pen. Or you can use this CDN link to run the tests in any environment you like: https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js.
+
+>Once you're done, submit the URL to your working project with all its tests passing.
+
+>Remember to use the Read-Search-Ask method if you get stuck.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="arnoldTribute.css">
+    <link href="https://fonts.googleapis.com/css?family=Cantarell&display=swap" rel="stylesheet">
+    <title>Arnold Schwarzenegger</title>
+</head>
+<body>
+    <main id="main">
+        <header id="title">
+            <h1 >Arnold Schwarzenegger</h1>
+            <p>From bodybuilding to Governator</p>
+        </header>
+        <div class="imgContainer">
+            <img id="image" src="https://wallpaperplay.com/walls/full/d/c/b/321591.jpg" alt="Arnold Schwarzenegger at a Mr. Olympia event.">
+            <p id="img-caption">Arnold Schwarzenegger at a Mr. Olympia competition</p>
+        </div>
+        <article id="tribute-info">
+            <!-- FOR THE TRIBUTE INFO, MAKE 3 COLUMNS CONTAINING HIS BODYBUILDING CAREER, ACTING CAREER, AND POLITICAL CAREER WITH THEIR OWN COLUMN -->
+        <h2>Who is Arnold Schwarzenegger?</h2>
+        <p>Arnold Alois Schwarzenegger is an Austrian-American actor, filmmaker, businessman, author, philanthropist, activist, politician, and former professional bodybuilder and powerlifter.</p>
+<hr>
+        <div id="gridContainer">
+            <div id="bodyBuild">
+                <h3>Bodybuild Career</h3>
+                <ul>
+                    <!-- <U> TAG UNDERLINES ITS CONTENTS -->
+                    <li><u>Personal Records:</u></li>
+                    <ul>
+                        <!-- <SUP> TAG SUPERSCRIPTS CHARACTERS -->
+                        <li>Won 1<sup>st</sup> place in Mr. Universe (amateur) in 1967</li>
+                        <li>Won 1<sup>st</sup> place in Mr. Universe (pro) in 1968, 1969, 1970</li>
+                        <li>Won 1<sup>st</sup> place in Mr. Olympia 1970, 1971, 1972, 1973, 1974, 1975, 1980</li>
+                        <li>Won 1<sup>st</sup> place in International Powerlifting Championships in 1966 +80kg</li>
+                        <li>Won 1<sup>st</sup> place in German Powerlifting Championships in 1968 +80kg</li>
+                    </ul>
+                    <li>Nickname: The Austrian Oak</li>
+
+                </ul>
+            </div>
+            <div id="acting">
+                <h3>Acting Career</h3>
+                <ol>
+                    <li>Terminator 2: Judgment Day (1991)</li>
+                    <li>The Terminator (1984)</li>
+                    <li>Predator (1987)</li>
+                    <li>Total Recall (1990)</li>
+                    <li>True Lies (1994)</li>
+                    <li>Commando (1985)</li>
+                    <li>Conan the Barbarian (1982)</li>
+                    <li>Pumping Iron (1976)</li>
+                    <li>Terminator 3: Rise of the Machines (2003)</li>
+                    <li>Stay Hungry (1976)</li>
+
+                </ol>
+            </div>
+            <div id="political">
+                <h3>Political Career</h3>
+                <ul>
+                    <li>Has been registered as a Republican for many years, which is in contrast to his hollywood collegues who are generally considered liberal or Democratic leaning.</li>
+                    <li>Schwarzenegger announced his candidacy in 2003 for Governor of California on August 6, 2003 where he had the most recognized name in a crowded field of candidates.</li>
+                    <li>Schwarzenegger was the second foreign-born Governor of California after Irish-born Governor John G. Downey in 1862.</li>
+                </ul>
+            </div>
+        </div>
+        <!-- THE TARGET="BLANK" ATTRIBUTE OPENS A NEW WINDOW WHEN A LINK IS CLICKED -->
+        <p>For more information on Arnold Schwarzenegger, visit <a target="blank" href="https://en.wikipedia.org/wiki/Arnold_Schwarzenegger">his Wiki</a>.</p>
+
+        </article>
+    </main>
+</body>
+</html>
+<!-- 29MAY19 DONE WITH ABOUT 90% OF THE WORK. NEED TO CHOOSE A FONT FOR THE ENTIRE PAGE. AND MAKE THE SITE RESPONSIVE IF IT ISN'T ALREADY. -->

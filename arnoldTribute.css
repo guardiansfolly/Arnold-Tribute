@@ -1,0 +1,112 @@
+html{
+    background-color: #ffffff;
+    font-family: 'Cantarel', Arial, Helvetica, sans-serif
+}
+#main{
+    background-color: #cfcfcf;
+    border-radius: 10px;
+    padding: .2% 0;
+    margin: auto;
+    width: 95%;
+}
+
+#image{
+    width: 60%;
+    margin-top: .5%;
+}
+#title{
+    text-align: center;
+    line-height: 60%;
+    padding: 1% 0;
+    background-color: #ffffff;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#gridContainer{
+    display: grid;
+    grid-template-areas: 
+    "bodyBuild acting political";
+    text-align: center;
+    column-gap: 10px;
+    background-color: #cfcfcf;
+    margin: 1%;
+}
+#bodyBuild{
+    grid-area: bodyBuild;
+    border-radius: 10px;
+    background-color: #ffffff;
+    max-width: 200%;
+    word-break: keep-all;
+}
+#acting{
+    grid-area: acting;
+    border-radius: 10px;
+    background-color: #ffffff;
+    max-width: 200%;
+    word-break: keep-all;
+    margin: 0 20%;
+    padding: 0 10%;
+    max-height: 100%;
+}
+#political{
+    grid-area: political;
+    border-radius: 10px;
+    background-color: #ffffff;
+    max-width: 200%;
+    word-break: keep-all;
+}
+.imgContainer{
+    text-align: center;
+}
+.imgContainer p{
+    margin:0;
+    font-size: 12px;
+}
+hr{
+    word-wrap: normal;
+}
+#gridContainer h3{
+    text-decoration: underline;
+}
+ul , ol{
+    text-align: left;
+}
+article p{
+    text-align: center;
+}
+article h2{
+    text-align: center;
+}
+@media (max-width: 768px) {
+    #gridContainer{
+        grid-template-areas: 
+        "bodyBuild"
+        "acting"
+        "political";
+        max-width: 320px;
+        margin: auto;
+        grid-row-gap: 10px;
+    }
+    #acting{
+        padding: 0;
+        margin: 0;
+    }
+}
+@media (max-width:320px) {
+    #gridContainer{
+        margin: 10%;
+    }
+}
+@media (max-width: 384px) {
+    #title{
+        line-height: 130%;
+    }
+}
+
+/* COLORS;
+#C7C9CE
+#959AA5
+#576075
+#3E485F
+*/
